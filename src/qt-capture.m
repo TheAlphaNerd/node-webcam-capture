@@ -27,7 +27,7 @@
   if (cnt==0) {
     NSBitmapImageRep *bitmap = [[NSBitmapImageRep alloc] initWithCIImage:image];
 
-    NSData *imgData = [bitmap representationUsingType:NSJPEGFileType
+    NSData *imgData = [bitmap representationUsingType:NSPNGFileType
           properties:[NSDictionary
                        dictionaryWithObject:[NSNumber numberWithFloat:0.9]
                        forKey:NSImageCompressionFactor]];
